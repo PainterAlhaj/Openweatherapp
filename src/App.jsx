@@ -57,6 +57,7 @@ const [displaythirddata,setdisplaythirddata]=useState([])
 const [displayfourthdata,setdisplayfourthdata]=useState([])
 const [displayfifthdata,setdisplayfifthdata]=useState([])
 const [weathercity,setweathercity]=useState('')
+const [citynotfound,setcitynotfound]=useState('')
 
 const API_KEY =  import.meta.env.VITE_WEATHER_API_KEY;
     const {location,error,getUserLocation,weatherData,getUserPollution,airPollution,envicon,setenvicon,usercurrentcity,
@@ -273,6 +274,15 @@ setfeelslike(weatherData.main.feels_like)
 
       } else {
         console.log("City not found");
+        const nocities=[{
+          
+          city: "City",
+          state: "Not",
+          country: "Found",
+          
+        }]
+        setmultiplecities(nocities)
+        
       }
     } catch (error) {
       console.log("Error fetching weather data:", error);

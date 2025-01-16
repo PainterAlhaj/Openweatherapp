@@ -276,9 +276,9 @@ setfeelslike(weatherData.main.feels_like)
         console.log("City not found");
         const nocities=[{
           
-          city: "City",
-          state: "Not",
-          country: "Found",
+          city: "City Not Found",
+          state: '',
+          country: '',
           
         }]
         setmultiplecities(nocities)

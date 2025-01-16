@@ -127,7 +127,7 @@ background: #000;
   
     
 }
-@media (max-width:450px) {
+@media (max-width:500px) {
 
 
     .highlight-container .highlight-data .top{
@@ -153,12 +153,17 @@ background: #000;
     .highlight-container .highlight-data .top .air .quality{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+
+        justify-content:center;
+        gap: 20px;
     padding: 10px 10px;
     
     
     
     }
+   
+
 
     .highlight-container .highlight-data .top .air .alldata{
 

@@ -75,7 +75,7 @@ width: 100%;
     }
     
 
-    @media (max-width:450px) {
+    @media (max-width:500px) {
         .sun-container{
            
        
@@ -87,6 +87,10 @@ width: 100%;
             
         
         }
+.sun-container .sun-data .sun-rise-set .quality  p{
+    text-align: center;
+    width: 100%;
+}
         .sun-container .sun-data .sun-rise-set  .sun-result .sunrise,
         .sun-container .sun-data .sun-rise-set  .sun-result .sunset{
             display: flex;
@@ -110,6 +114,11 @@ width: 100%;
             justify-content:center;
             flex-direction: column;
         width: 100%;
-        gap: 10px;
+        gap: 20px;
+        }
+        .sun-container .sun-data .sun-rise-set   .alldata .icon{
+            font-size: 28px;
+            cursor: pointer;
+            margin-right: 0;
         }
     }

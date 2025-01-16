@@ -103,12 +103,7 @@ useEffect(()=>{
 },[airPollution])
 
 
-// useEffect(()=>{
-  
-//   if (usercurrentcity) {
-//     setCity(usercurrentcity);
-//   }
-// },[usercurrentcity])
+
 useEffect(() => {
   if (currentdisplaytodaydata) {
     setdisplaytodaydata(currentdisplaytodaydata);
@@ -459,22 +454,25 @@ catch(forecasterror){
 }
 
 useEffect(()=>{
-  getWeather()
-  getforecast()
-  console.log("today data :-" ,displaytodaydata)
+  if(city.length!==0){
+    getWeather()
+    getforecast()
+  }
   
     },[])
 
   useEffect(()=>{
- getWeather()
- getforecast()
+    if(city.length!==0){
+      getWeather()
+      getforecast()
+    }
+
    },[city])
 
 const handleChange = (event) => {
     setCity(event.target.value);
 setinputchange(true)
 setweathercity(event.target.value)
-console.log(weathercity)
 
 
   };

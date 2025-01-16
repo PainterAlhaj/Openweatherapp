@@ -1,0 +1,202 @@
+
+.appbar{
+    /* border-bottom: 1px solid white; */
+
+}
+
+.appbar .toolbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Albert sans';
+
+}
+.appbar .toolbar .left .logo{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+
+
+}
+.appbar .toolbar .left .logo .icon{
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.appbar .toolbar .left .logo p{
+    font-size: 25px;
+    text-transform: lowercase;
+}
+
+
+.appbar .toolbar .right{
+    position: relative;
+background: rgb(34, 33, 33);
+border-radius: 20px;
+/* border: 1px solid red; */
+
+
+}
+.appbar .toolbar .right .right-content{
+    position: relative;
+/* border: 1px solid red; */
+background: rgb(34, 33, 33);
+border-top-left-radius: 20px;
+border-top-right-radius:20px ;
+border-radius: 20px;
+
+}
+
+.appbar .toolbar .right  .input-box{
+position: relative;
+    /* border: 1px solid rgb(117, 82, 82); */
+    display: flex;
+    align-items: center;
+    width: 400px;
+background: rgb(34, 33, 33);
+border-radius: 20px;
+/* border-top-left-radius: 20px; */
+/* border-top-right-radius: 20px; */
+padding: 10px 10px;
+    
+    }
+    .appbar .toolbar .right .right-content  .icon{
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 0;
+        /* border: 1px solid; */
+    }
+    .appbar .toolbar .right  .input-box input{
+        border: none;
+        outline: none;
+        background: none;
+        padding: 5px 0;
+        padding-right: 10px;
+    font-family: 'Albert sans';
+    color: white;
+    width: 100%;
+/* border: 1px solid red; */
+
+    
+    }
+    .appbar .toolbar .last .btn{
+background: rgb(34, 33, 33);
+border-radius: 20px;
+        color: white;
+        text-transform: capitalize;
+        box-shadow: none;
+        font-family: "Albert sans";
+    }
+.appbar .toolbar .last .icon{
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.appbar .toolbar .right .multipleresult{
+    position: absolute;
+    /* background: white; */
+    box-shadow: 0 0 10px rgba(14, 13, 13, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 100;
+    width: 100%;
+background: rgb(34, 33, 33);
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+/* border: 1px solid red; */
+
+
+
+}
+.appbar .toolbar .right  .multipleresult .allcity {
+    padding: 10px 10px;
+}
+.appbar .toolbar .right  .multipleresult ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.appbar .toolbar .right  .multipleresult ul li a{
+    text-decoration: none;
+color: white;
+
+    font-size: 14px;
+}
+@media (max-width:1200px) {
+    .appbar .toolbar .right .input-box{
+        width: 300px;
+    }
+}
+@media (max-width:767px) {
+    .appbar .toolbar .right .input-box{
+        width: 200px;
+        padding: 5px 0;
+
+    }
+    .appbar .toolbar .right  .input-box input{
+    
+        padding: 5px 0;
+    
+    }
+    .appbar .toolbar .left .logo .icon{
+        font-size: 25px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .appbar .toolbar .left .logo p{
+        font-size: 20px;
+        text-transform: lowercase;
+    
+}
+.appbar .toolbar .right  .input-box .icon{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.appbar .toolbar .last{
+    display: none;
+}
+}
+@media (max-width:450px) {
+    .appbar .toolbar .right .input-box{
+        width: 150px;
+        padding: 5px 5px;
+        gap: 5px;
+
+    }
+    .appbar .toolbar .right  .input-box input{
+    
+        padding: 5px 5px;
+        /* border: 1px solid black; */
+    
+    }
+    .appbar .toolbar .left .logo .icon{
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .appbar .toolbar .left .logo p{
+        font-size: 18px;
+        text-transform: lowercase;
+    
+}
+.appbar .toolbar .right  .input-box .icon{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+}
+@media (max-width:350px) {
+    .appbar .toolbar .right .input-box{
+        width: 130px;
+        padding: 5px 5px;
+        gap: 5px;
+
+    }
+    .appbar .toolbar .right  .input-box .icon{
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+}

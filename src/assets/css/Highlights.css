@@ -1,0 +1,218 @@
+.highlight-container{
+    color: white;
+background: rgb(34, 33, 33);
+flex: 3;
+border-radius: 20px;
+
+    /* width: 400px; */
+}
+
+.highlight-container .highlight-data{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+
+
+}
+.highlight-container .highlight-data h3{
+    font-size: 25px;
+    font-weight: normal;
+}
+.highlight-container .highlight-data .top{
+    display: flex;
+gap: 20px;
+padding: 10px 10px;
+
+}
+.highlight-container .highlight-data .top .air {
+    padding: 20px 20px;
+flex: 2;
+background: #000;
+border-radius: 15px;
+
+background:rgb(41, 40, 40);
+
+
+
+}
+
+.highlight-container .highlight-data .top .air .quality{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 10px 10px;
+/* border: 1px solid red; */
+
+
+}
+.highlight-container .highlight-data .top .air .alldata{
+
+display: flex;
+align-items: center;
+padding: 10px 10px;
+/* border: 1px solid red; */
+margin-top: 20px;
+
+
+
+}
+.highlight-container .highlight-data .top .air .alldata .icon{
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.highlight-container .highlight-data .top .air .alldata .air-data{
+    display: flex;
+    gap: 20px;
+justify-content: space-between;
+
+    /* border: 1px solid red; */
+    width: 100%;
+
+}
+.highlight-container .highlight-data .top .air .alldata .air-data div p {
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    
+}
+.highlight-container .highlight-data  div h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+.highlight-container .highlight-data .top .sun-container{
+    flex: 2;
+background: #000;
+
+}
+
+.highlight-container .highlight-data .bottom{
+    display: flex;
+    padding: 10px 10px;
+    /* gap: 20px; */
+
+
+}
+  
+
+
+@media (max-width:1150px) {
+.highlight-container{
+    flex: 2.5;
+}
+    .highlight-container .highlight-data .top{
+        display: flex;
+        flex-direction: column;
+    gap: 20px;
+    padding: 10px 10px;
+    
+    }
+    .highlight-container .highlight-data .top .air {
+    flex: 1;
+  ;
+    
+    
+    
+    }
+    .highlight-container .highlight-data .top .sun-container{
+        flex: 1;
+    
+    }
+    .highlight-container .highlight-data  div h2{
+        font-size: 20px;
+        font-weight: normal;
+    }
+}
+@media (max-width:599px) {
+  
+    
+}
+@media (max-width:450px) {
+
+
+    .highlight-container .highlight-data .top{
+        display: flex;
+    gap: 20px;
+    padding: 10px 10px;
+
+    
+    }
+    .highlight-container .highlight-data .top .air {
+        padding: 20px 20px;
+    flex: 2;
+    background: rgb(29, 29, 29);
+    background: #000;
+    border-radius: 15px;
+    
+    background:rgb(41, 40, 40);
+    
+    
+    
+    }
+    
+    .highlight-container .highlight-data .top .air .quality{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    padding: 10px 10px;
+    
+    
+    
+    }
+
+    .highlight-container .highlight-data .top .air .alldata{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        margin-top: 20px;
+        
+        
+        
+        }
+
+        .highlight-container .highlight-data .top .air .alldata .air-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+            margin-bottom: 20px;
+        }
+        .highlight-container .highlight-data .top .air .alldata .icon{
+            font-size: 38px;
+            cursor: pointer;
+            margin-right: 0;
+
+        }
+        
+        .highlight-container .highlight-data .top .air .alldata .air-data{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+            /* border: 1px solid red; */
+            width: 100%;
+        
+        }
+        .highlight-container .highlight-data .top .air .alldata .air-data div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .highlight-container .highlight-data .top .air .alldata .air-data div p {
+            /* border: 1px solid red; */
+            margin-bottom: 10px;
+            
+        }
+        .highlight-container .highlight-data  div h2{
+            font-size: 24px;
+            font-weight: normal;
+        }
+}
+

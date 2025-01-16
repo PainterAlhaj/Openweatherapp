@@ -1,0 +1,115 @@
+.sun-container{
+    background: rgb(34, 33, 33);
+    background:rgb(41, 40, 40) !important;
+border-radius: 10px;
+    color: white;
+    
+
+}
+
+.sun-container .sun-data{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+
+}
+.sun-container .sun-data h3{
+    font-size: 25px;
+    font-weight: normal;
+}
+.sun-container .sun-data .sun-rise-set {
+    /* padding: 20px 20px; */
+/* border: 1px solid red; */
+
+
+}
+.sun-container .sun-data .sun-rise-set .quality{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 10px 10px;
+/* border: 1px solid red; */
+
+
+}
+.sun-container .sun-data .sun-rise-set  .sun-result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+width: 100%;
+}
+.sun-container .sun-data .sun-rise-set  .sun-result .sunrise,
+.sun-container .sun-data .sun-rise-set  .sun-result .sunset{
+    display: flex;
+    align-items: center;
+}
+
+.sun-container .sun-data .sun-rise-set  .sun-result .sunrise .sun-time,
+.sun-container .sun-data .sun-rise-set  .sun-result .sunset .sun-time{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.sun-container .sun-data .sun-rise-set  .sun-result .sunrise .sun-time h2,
+.sun-container .sun-data .sun-rise-set  .sun-result .sunset .sun-time h2{
+    font-size: 22px;
+}
+
+.sun-container .sun-data .sun-rise-set .alldata{
+
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    align-items: center;
+    
+    
+    
+    }
+    .sun-container .sun-data .sun-rise-set   .alldata .icon{
+        font-size: 28px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    
+
+    @media (max-width:450px) {
+        .sun-container{
+           
+       
+            
+        
+        }
+        
+        .sun-container .sun-data{
+            
+        
+        }
+        .sun-container .sun-data .sun-rise-set  .sun-result .sunrise,
+        .sun-container .sun-data .sun-rise-set  .sun-result .sunset{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .sun-container .sun-data .sun-rise-set  .sun-result .sunrise .sun-time,
+.sun-container .sun-data .sun-rise-set  .sun-result .sunset .sun-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+        .sun-container .sun-data .sun-rise-set  .sun-result{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        }
+    }

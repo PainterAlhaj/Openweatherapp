@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .design-box{
+   background: linear-gradient(45deg ,#739dd8,#73ABFA);
+   /* width: 600px; */
+   border-radius: 20px;
+    padding: 20px 50px;
+    display: flex;
+flex-direction: column;
+gap: 30px;
+color: white;
+}
+.container .design-box .input-box{
+/* margin-bottom: 20px; */
+}
+.container .design-box .input-box .input{
+
+font-size: 28px;
+margin-bottom: 20px;
+font-family: "Albert sans";
+
+}
+.container .design-box .input-box .inputlabel{
+    font-size: 20px;
+    /* margin-bottom: 20px; */
+
+
+    
+}
+.container .design-box .input-box .btn{
+    background: #06234d;
+    color: white;
+    font-size: 20px;
+    text-transform: unset;
+    font-family: "Albert sans";
+    /* margin-top: 20px; */
+}
+
+.container .design-box .result-box{
+    font-size: 20px;
+}
+.container .design-box .result-box  .temperature-box{
+    /* border: 1px solid black; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+
+}
+.container .design-box .result-box  .temperature-box .city-name{
+    margin-bottom: 10px;
+}
+
+.container .design-box .result-box .clouds{
+    display: flex;
+    justify-content: space-between;
+}
+.container .design-box .result-box .clouds p{
+    margin-bottom: 10px;
+}

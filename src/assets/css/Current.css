@@ -1,0 +1,93 @@
+.current-container{
+    background: rgb(34, 33, 33);
+
+    border-radius: 20px;
+    color: white;
+    flex: 1;
+}
+
+.current-container .current-data {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+
+
+}
+.current-container .current-data .current-temperature{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    
+
+}
+
+.current-container .current-data .current-temperature  .type{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+
+.current-container .current-data h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+.current-container .current-data .temperature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+
+}
+.current-container .current-data .temperature p{
+    font-size: 50px;
+ 
+}
+.current-container .current-data .temperature .icon{
+    font-size: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.current-container .current-data .time ,.current-container .current-data .current-location{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.current-container .current-data .time p,.current-container .current-data .current-location p{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.current-container .current-data .icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:1050px) {
+.current-container{
+
+}
+    .current-container .current-data .temperature p{
+        font-size: 40px;
+     
+    }
+}
+@media (max-width:890px) {
+    .current-container .current-data .temperature p{
+        font-size: 30px;
+     
+    }
+}
+@media (max-width:599px) {
+    .current-container .current-data .temperature p{
+        font-size: 55px;
+    }
+}
+
+

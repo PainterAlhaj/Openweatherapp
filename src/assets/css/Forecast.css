@@ -1,0 +1,81 @@
+.todays-forecast-container .forecast-data{
+        color: white;
+    background: rgb(34, 33, 33);
+    border-radius: 20px;
+    font-family: "Albert sans";
+    margin-top: 20px;
+    
+}
+.todays-forecast-container .forecast-data{
+
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+
+}
+.todays-forecast-container .forecast-data h3{
+    font-size: 25px;
+    font-weight: normal;
+}
+.todays-forecast-container .forecast-data .todaysresult{
+    /* border: 1px solid black; */
+
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+
+
+}
+.todays-forecast-container .forecast-data .todaysresult div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background:rgb(41, 40, 40);
+    padding: 20px 20px;
+    border-radius: 10px;
+    flex: 1;
+    gap: 20px;
+
+
+
+}
+.todays-forecast-container .forecast-data .todaysresult div h2{
+    font-size: 30px;
+}
+.todays-forecast-container .forecast-data .todaysresult div .icon{
+    font-size: 60px;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    
+  
+    .todays-forecast-container .forecast-data .todaysresult {
+    
+        padding: 10px;
+        /* flex: 1; */
+        /* border: 1px solid blue; */
+        flex-wrap: wrap ;
+    }
+
+    .todays-forecast-container .forecast-data .todaysresult div{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+ }
+
+ .todays-forecast-container .forecast-data .todaysresult div .icon{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+}
